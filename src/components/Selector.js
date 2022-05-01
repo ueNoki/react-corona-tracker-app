@@ -1,17 +1,16 @@
 // Selector.js
-import { useState } from "react";
-import countriesJson from "../countries.json";
+
 
 const Selector = () => {
-  const [country, setCountry] = useState("");
   return (
     <div>
       <select onChange={(e) => setCountry(e.target.value)}>
+        <option>Select A Country</option>
         {countriesJson.map((country, index) => (
           <option key={index} value={country.Slug}>{country.Country}</option>
         ))}
       </select>
-      {country}
+      <button onClick={getCountryData}>Get Data</button>
     </div>
   );
 };
