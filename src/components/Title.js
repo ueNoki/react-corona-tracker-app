@@ -1,11 +1,11 @@
 // Title.js
 
-const Titile = () => {
+const Title = () => {
   return (
     <div>
-      <h1>Covid Tracker</h1>
+      <h1>かかす感染状況</h1>
     </div>
   );
 };
 
-export default Titile;
+export default Title;
